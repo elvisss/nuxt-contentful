@@ -1,5 +1,5 @@
 <template>
-  <div class="recipe-list">Recipe List</div>
+  <div>Recipe Details</div>
 </template>
 
 <script lang="ts">
