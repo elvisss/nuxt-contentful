@@ -1,18 +1,22 @@
 <template>
   <div className="recipe-list">
-    Recipe List
-    <ul>
-      <li v-for="recipe in recipes" :key="recipe.sys.id">
-        <span>{{ recipe.fields.title }}</span>
-      </li>
-    </ul>
+    <RecipeCard
+      v-for="recipe in recipes"
+      :key="recipe.sys.id"
+      v-bind="recipe.fields"
+    />
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
+import RecipeCard from '~/components/RecipeCard'
 
-@Component
+@Component({
+  components: {
+    RecipeCard,
+  },
+})
 export default class IndexPage extends Vue {
   async asyncData({ $contentful }: { $contentful: any }) {
     const client = $contentful.getClient()
