@@ -1,4 +1,10 @@
 export default {
+  publicRuntimeConfig: {},
+  privateRuntimeConfig: {
+    ctfSpaceId: process.env.CTF_SPACE_ID,
+    ctfCdaAccessToken: process.env.CTF_CDA_ACCESS_TOKEN,
+    ctfCpaAccessToken: process.env.CTF_CPA_ACCESS_TOKEN,
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-contentful',
@@ -28,7 +34,7 @@ export default {
   css: ['assets/global.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/contentful'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
