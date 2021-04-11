@@ -1,5 +1,5 @@
 <template>
-  <div>Recipe Details</div>
+  <div>Recipe Details {{ recipe.fields.title }}</div>
 </template>
 
 <script lang="ts">
@@ -23,7 +23,7 @@ export default class RecipePage extends Vue {
   }
 
   mounted() {
-    console.log(this.recipe)
+    console.log(this.recipe, 'recipe')
   }
 }
 </script>

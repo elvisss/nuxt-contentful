@@ -31,7 +31,7 @@ export default class IndexPage extends Vue {
   }
 
   mounted() {
-    console.log(this.recipes)
+    console.log(this.recipes, 'recipes')
   }
 }
 </script>

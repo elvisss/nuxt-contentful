@@ -14,7 +14,9 @@
         <p>Takes aprox {{ cookingTime }} mins to make</p>
       </div>
       <div class="actions">
-        <NuxtLink :to="`/recipes/${slug}`">Cook this</NuxtLink>
+        <NuxtLink :to="{ name: 'recipes-slug', params: { slug } }">
+          Cook this 222
+        </NuxtLink>
       </div>
     </div>
   </div>
