@@ -1,5 +1,5 @@
 <template>
-  <div>Recipe Details</div>
+  <div>Recipe Details {{ recipe.fields.title }}</div>
 </template>
 
 <script lang="ts">

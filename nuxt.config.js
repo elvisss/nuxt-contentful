@@ -1,10 +1,10 @@
 export default {
-  publicRuntimeConfig: {},
-  privateRuntimeConfig: {
+  publicRuntimeConfig: {
     ctfSpaceId: process.env.CTF_SPACE_ID,
     ctfCdaAccessToken: process.env.CTF_CDA_ACCESS_TOKEN,
     ctfCpaAccessToken: process.env.CTF_CPA_ACCESS_TOKEN,
   },
+  privateRuntimeConfig: {},
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-contentful',
